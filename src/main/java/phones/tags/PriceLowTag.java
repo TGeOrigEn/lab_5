@@ -11,6 +11,6 @@ public class PriceLowTag extends Tag<Double> {
 
     @Override
     public boolean find(@NotNull Phone phone) {
-        return false;
+        return value < phone.getPrice();
     }
 }
